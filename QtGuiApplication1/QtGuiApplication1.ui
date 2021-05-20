@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtGuiApplication1Class</class>
+ <widget class="QMainWindow" name="QtGuiApplication1Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1106</width>
+    <height>859</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtGuiApplication1</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,0">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(0, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>选择</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLineEdit" name="lineEdit_2"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>找茬个数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>重新查找</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>阈值</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_Respon">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 170, 0);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QtGuiApplication1.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>openfiledialog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>725</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>523</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>QtGuiApplication1Class</receiver>
+   <slot>regist()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>431</x>
+     <y>710</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>426</x>
+     <y>655</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>openfiledialog()</slot>
+  <slot>regist()</slot>
+ </slots>
+</ui>
